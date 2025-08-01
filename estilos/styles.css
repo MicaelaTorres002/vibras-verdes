@@ -1,0 +1,140 @@
+/* estilos generales */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Vollkorn", serif;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header */
+
+.index-header {
+    background-image: url(../img/index-header-background2.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-header {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    margin: 1rem;
+}
+/* main */
+
+main {
+    background-color: #509188;
+}
+
+.index-main-h1 {
+    padding-top: 1rem;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.section-presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.video-hero {
+    display: none;
+}
+
+.index-main-btn {
+    background-color: #c7fae98e;
+    color: #000000;
+    border-color: #3c726bbe;
+}
+
+.index-section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.index-card {
+    display: flex;
+    justify-content: center;
+    max-width: 20rem;
+    background-color: #c7fae98e;
+    margin: 1rem 0;
+}
+
+.index-card img {
+    min-width: 18rem;
+    width: 100%;
+    padding: 1rem;
+    max-width: 20rem;
+}
+
+.index-card h2 {
+    margin: 0rem;
+    padding-top: 1vh;
+}
+
+.index-card p {
+    padding: 0 1rem;
+}
+
+/* .section-articulos-index {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div-ultimos-artuclus { grid-area: 1 / 1 / 2 / 2; }
+.div-guias-para-principiantes { grid-area: 2 / 1 / 3 / 2; }
+.div-plantas-de-temporada { grid-area: 3 / 1 / 4 / 2; } */
+
+/* footer */
+
+footer {
+    background-color: #004d29c5;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.nav-footer a img {
+    width: 4rem;
+}
+
+/* no sé cómo modificar los iconos de bootstrap  */
+/* .bi bi-facebook {
+    font-size: medium;
+    color: black;
+} */
+
+.p-footer {
+    padding: 1rem;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"); 
