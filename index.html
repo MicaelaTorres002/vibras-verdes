@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vibras Verdes Jardinería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/styles.css">
 </head>
 <body>
     <header class="index-header">
-        <section class="navbar">
-            <nav class="navbar navbar-expand-md bg-body-tertiary mt-0">
+        <section class="navbar-wrapper">
+            <nav class="navbar navbar-expand-md mi-navbar">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html">Inicio</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,46 +33,51 @@
             <img class="logo-header" src="./img/logo-vibras-verdes-transparemnte.png" alt="Logo Vibras Verdes">
         </section>    
     </header>
-    <main>
+    <main class="main.index">
         <h1 class="index-main-h1 centrar-texto">Bienvenidos a mi blog de jardinería</h1>
         <section class="section-presentacion">
-            <video class="video-hero" autoplay loop muted playsinline src="./img/video-hero-horizontal.mp4"></video>
-            <h3>Hola soy tory</h3>
-            <p>Aficionada a las plantas y enamorada de la jardinería. Encontré en la tierra, el verde y los brotes una fuente de calma. Empecé desde cero, sin presupuesto y con muchas dudas, visitando blogs como este en busca de ayuda e inspiración. <br> <br> En este blog no solamente van a encontrar la información básica de internet sino que también mi experiencia personal: para que puedan crear su jardín o huerta con sus propias manos, sin gastar de más y disfrutando cada paso del camino.</p>
-            <button class="index-main-btn">
-                <a href="#">Comenzá tu propío jardín</a>
-            </button>
+            <video class="video-hero" autoplay loop muted playsinline src="./img/video-hero-2.mp4"></video>
+            <div class="div-index">
+                <h3>Hola soy tory</h3>
+                <p>Aficionada a las plantas y enamorada de la jardinería. Encontré en la tierra, el verde y los brotes una fuente de calma. Empecé desde cero, sin presupuesto y con muchas dudas, visitando blogs como este en busca de ayuda e inspiración. <br> <br> En este blog no solamente van a encontrar la información básica de internet sino que también mi experiencia personal: para que puedan crear su jardín o huerta con sus propias manos, sin gastar de más y disfrutando cada paso del camino.</p>
+                <button class="index-main-btn">
+                    <a href="#">Comenzá tu propío jardín</a>
+                </button>
+            </div>
         </section>
-        <section class="index-section-card">
-            <h2>Entradas recientes</h2>
-            <div class="index-card">
+        <h2 class="entradas-recientes">Entradas recientes</h2>
+        <section class="index-section-card parent">
+            <div class="index-card-e div3">
                 <a href="#">
-                <h2 class="centrar-texto">Ultimos articulos</h2>
-                <img src="./img/orquideas.jpg" alt="orquideas">
-                <p>Publicamos nuevos artículos cada mes. Te invitamos a leerlos y dejarnos tus comentarios para seguir aprendiendo juntos.</p>
-                </a>
-            </div>   
-            <div class="index-card"> 
-                <a href="#">
-                <h2 class="centrar-texto">Guías para pincipiantes</h2>
-                <img src="./img/maceta-card.jpg" alt="maceta">
-                <p>Todo lo que necesitás saber para empezar a cuidar tus plantas desde cero, explicado paso a paso</p>
+                    <div class="div3-content">
+                        <div class="div3-img">
+                            <img src="./img/orquideas.jpg" alt="orquideas" />
+                        </div>
+                        <section class="div3-texto">
+                            <h2 class="centrar-texto">Ultimos articulos</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ipsam eos laboriosam quibusdam ex quia atque asperiores quaerat fugit provident fuga, nisi reprehenderit veritatis. Error Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dolorum dolor autem porro repellat enim velit distinctio eum, quasi nesciunt cumque delectus ipsum esse aliquid odio maxime dolorem ad soluta! Natus placeat iste suscipit, illo sapiente reprehenderit minima minus quas.consectetur beatae quisquam in illum voluptatem magni, rem suscipit eos illo et ullam quibusdam. Ipsam!</p>
+                        </section>
+                    </div>
                 </a>
             </div>
-            <div class="index-card">
+            <div class="index-card-e div1"> 
+                <a href="#">
+                <h2 class="centrar-texto">Lorem ipsum dolor sit.</h2>
+                <img src="./img/maceta-card.jpg" alt="maceta">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corrupti corporis officia, aperiam illum eum explicabo nam, dolore maiores totam velit, maxime veniam nisi aspernatur assumenda eligendi accusantium quisquam? Perferendis quas aliquam necessitatibus tenetur nihil incidunt distinctio, ex deserunt voluptatibus.</p>
+                </a>
+            </div>
+            <div class="index-card-e div2">
                 <a href="#">
                 <h2 class="centrar-texto">Plantas de Temporada</h2>
                 <img src="./img/flor-card.jpg" alt="flores">
                 <p>Si querés arrancar un huerto o sumar nuevas especies a tu jardín, conocer las plantas de temporada es el primer paso.</p>
                 </a>
             </div>
-        </section>    
+        </section>
     </main>
     <footer>
         <nav class="nav-footer">
-            <!-- <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg></a> -->
             <a href="#"><img src="./img/facebook-logo.png" alt="Logo de Facebook"></a>
             <a href="#"><img src="./img/instagram-logo.png" alt="Logo de Instagram"></a>
         </nav>
