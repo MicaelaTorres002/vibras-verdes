@@ -1,0 +1,20 @@
+footer {
+    @include mar-pad(0,1rem);
+    background-color: $color-footer;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.nav-footer a img {
+    width: 4rem;
+}
+.p-footer {
+    display: flex;
+    padding-bottom: 1rem;
+    justify-content: center
+}

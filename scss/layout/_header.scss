@@ -1,0 +1,49 @@
+.index-header {
+    background-image: url(../img/index-header-background2.jpg);
+    background-size: cover;
+    background-position: 0%;
+}
+
+.guias-header {
+    background-color: $celeste;
+}
+
+.bitacora-header {
+    display: flex;
+    flex-direction: column;
+    background-color: $celeste;
+}
+
+.articulos-header {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/articulos-header-background.jpg);
+    background-size: cover;
+}
+
+nav.navbar {
+  width: 100%;
+}
+
+.mi-navbar {
+  background-color:$color-navbar !important;
+}
+
+.container-fluid {
+margin: 0%;
+}
+
+.navbar-wrapper {
+   @extend %flex-basico
+}
+
+.logo-header {
+    width: 13rem;
+    margin: 1rem;
+}
+
+.div-header-guias {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}

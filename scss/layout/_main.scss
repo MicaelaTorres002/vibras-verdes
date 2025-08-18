@@ -1,0 +1,137 @@
+main{
+    @include mar-pad(0,2rem 1rem);
+    background-color: $verde-agua;
+}
+
+.main-bitacora {
+    @include mar-pad(0,2rem 1rem);
+    background-image: url(../img/backgrown-articulos.jpg);
+    background-size: cover;
+}
+
+.index-main-h1 {
+    padding-top: 1rem;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.section-presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.section-contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.div-contacto {
+    padding-bottom: 2rem;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.video-hero {
+    display: none;
+}
+
+.index-main-btn {
+    background-color: $color-card;
+    color: #000000;
+    border-color: #3c726bbe;
+}
+
+.index-section-card {
+    @extend %flex-basico;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.guias-section-card {
+    @extend %flex-basico;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.articulos-section-card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.article-articulos {
+    @include mar-pad(1rem,1rem);
+    background-color: $color-card;
+    width: 18rem;
+}
+
+.article-articulos img {
+    width: 100%;
+}
+
+.article-bitacora {
+    @include mar-pad(1rem,1rem);
+    display: flex;
+    background-color: $color-bitacora;
+}
+
+.div-bitacora img {
+    width: 100%;
+}
+
+.index-card {
+    display: flex;
+    justify-content: center;
+    max-width: 20rem;
+    background-color: $color-card;
+    margin: 1rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+.index-card img {
+    @extend %img-card;
+}
+
+.index-card h2 {
+    margin: 0rem;
+    padding-top: 1vh;
+}
+
+.index-card p {
+    padding: 0 1rem;
+}
+
+.index-card-e {
+    display: flex;
+    justify-content: center;
+    max-width: 20rem;
+    background-color: $color-card;
+    margin: 1rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+.index-card-e img {
+    @extend %img-card;
+}
+
+.index-card-e h2 {
+    margin: 0rem;
+    padding-top: 1vh;
+}
+
+.index-card-e p {
+    padding: 0 1rem;
+}
