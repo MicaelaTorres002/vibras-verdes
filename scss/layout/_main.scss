@@ -3,6 +3,11 @@ main{
     background-color: $verde-agua;
 }
 
+.main-contacto {
+    background: $color-footer;
+    background: radial-gradient(circle,rgba(0, 77, 41, 1) 24%, rgba(154, 184, 184, 1) 87%);
+}
+
 .main-bitacora {
     @include mar-pad(0,2rem 1rem);
     background-image: url(../img/backgrown-articulos.jpg);
@@ -100,20 +105,20 @@ main a {
     height: 100%;
 }
 
-.index-card img {
-    @extend %img-card;
+.index-card { 
+    img {
+        @extend %img-card;
+    }
+    h2 {
+        margin: 0rem;
+        padding-top: 1vh;
+    }
+    P {
+        padding: 0 1rem;
+    }
 }
 
-.index-card h2 {
-    margin: 0rem;
-    padding-top: 1vh;
-}
-
-.index-card p {
-    padding: 0 1rem;
-}
-
-.index-card-e {
+.index-card-e { 
     display: flex;
     justify-content: center;
     max-width: 20rem;
@@ -121,17 +126,17 @@ main a {
     margin: 1rem 0;
     width: 100%;
     height: 100%;
-}
-
-.index-card-e img {
-    @extend %img-card;
-}
-
-.index-card-e h2 {
-    margin: 0rem;
-    padding-top: 1vh;
-}
-
-.index-card-e p {
+    box-shadow: 19px 14px 89px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 19px 14px 89px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 19px 14px 89px 0px rgba(0,0,0,0.75);
+    img {
+        @extend %img-card;
+    }
+    h2 {
+        margin: 0rem;
+        padding-top: 1vh;
+    }
+    p {
     padding: 0 1rem;
+    }
 }
